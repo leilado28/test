@@ -1,0 +1,467 @@
+* {
+margin: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+body {
+font-family:'Inter', sans-serif;
+display: flex;
+flex-direction: column;
+}
+
+.top-bar {
+display: flex;
+align-items: center;
+padding: 20px 30px;
+}
+
+.content {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.bar-left {
+display: flex;
+align-items: center;
+}
+
+.bar-right {
+margin-left: auto;
+display: flex;
+align-items: center;
+}
+
+.menu {
+display: flex;
+}
+
+.menu a {
+color: #2d2d2d;
+text-decoration: none;
+margin-right: 15px;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+/* Dropdown Button */
+.dropbtn {
+background-color: #04AA6D;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.profile-trigger img {
+width: 40px;
+border-radius: 100%;
+}
+
+.search-wrapper {
+width: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;;
+}
+
+.search-logo img {
+width: 272px;
+}
+
+.search-bar {
+margin: 30px 0;
+position: relative;
+width: 100%;
+}
+
+.search-bar input {
+height: 50px;
+width: 100%;
+border: 1px solid #d0d0d0;
+border-radius: 100px;
+padding: 0 50px;
+outline: 0;
+box-shadow: 0 0 0 0 rgba(136, 136, 136, 0);
+font-size: 18px;
+transition: box-shadow .3s;
+}
+
+.search-bar input:focus {
+box-shadow: 0 0 10px -4px #888888;
+}
+
+.search-bar .search-icon {
+position: absolute;
+width: 50px;
+height: 50px;
+align-items: center;
+justify-content: center;
+top: 0;
+display: flex;
+font-size: 20px;
+color: #888888;
+}
+
+.search-bar .search-icon.right {
+right: 0;
+}
+
+.search-info {
+font-size: 15px;
+}
+
+.search-info a {
+color: #3f50b5;
+text-decoration: none;
+}
+
+.search-info a:hover {
+text-decoration: underline;
+}
+
+.search-buttons {
+display: flex;
+margin-bottom: 30px;
+}
+
+.search-buttons a {
+text-decoration: none;
+margin-right: 15px;
+background-color: #f8f9fa;
+color: black;
+padding: 10px 15px;
+border-radius: 3px;
+border: 1px solid #f8f9fa;
+}
+
+.search-buttons a:last-child {
+margin-right: 0;
+}
+
+.search-buttons a:hover {
+border: 1px solid #8c8c8c;
+}
+
+.bottom-bar {
+display: flex;
+align-items: center;
+padding: 20px 30px;
+background-color: #ececec;
+border-top: 1px solid #d4d4d4;
+}
+
+#header {
+height: 60px;
+width: 100%;
+background: #F1F1F1 url("file:///Users/negatif/Desktop/google-search/images/poligle_logo.png") no-repeat;
+background-size: 100px 42px;
+position: absolute;
+top: 0;	
+left: 0;
+background-position: 15px 10px, center;
+border-bottom: 1px solid #E5E5E5;
+}
+
+#header div {
+height: 30px;
+width: 75px;
+position: absolute;
+right: 30px;
+top: 15px;
+background-color: #3C7ADF;
+border-radius: 3px;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+color: white;
+text-align: center;
+}
+
+#header div p {
+position: relative;
+top: -6px;
+}
+
+#search {
+position: absolute;
+height: 35px;
+width: 589px;
+left: 126px;
+top: 9px;
+font-size: 16px;
+font-family: Arial;
+}
+
+#mic {
+position: absolute;
+height: 20px;
+width: 13px;
+left: 686px;
+top: 18px;
+}
+
+#search-button {
+position: absolute;
+height: 41px;
+width: 41px;
+left: 720px;
+top: 9px;
+}
+
+#search-options {
+height: 60px;
+width: 100%;
+position: absolute;
+top: 59px;
+left: 0;
+border-bottom: 1px solid #E5E5E5;
+}
+
+.option {
+position: relative;
+color: #7A7A7A;
+font-size: 14px;
+font-family: Arial;
+display: inline-block;
+left: 115px;
+padding: 9px 15px 9px 15px;
+}
+
+#search-options img {
+position: absolute;
+right: 30px;
+top: 15px;
+}
+#result {
+position: relative;
+color: #808080;
+font-size: 13px;
+font-family: Arial;
+left: 120px;
+top: 125px;
+}
+
+.search-parent {
+display:flex;
+flex-direction: row;
+height: 250px;
+}
+
+.search-images {
+display: flex;
+width: 40%;
+}
+
+.search-results {
+position: relative;
+display: flex;
+height: 70px;
+width: 60%;
+left: 120px;
+top: 135px;
+padding: 15px 0 15px 0;
+}
+
+.title {
+color: #1A51BD;
+font-family: Arial;
+font-size: 16px;
+font-weight: bold;
+}
+
+
+.URL {
+color: #476621;
+font-family: Arial;
+font-size: 13px;
+margin-top: 0;
+font-weight: bold;
+}
+
+.description {
+color: #545454;
+font-family: Arial;
+font-size: 13px;
+}
+
+#page-selector {
+height: 100px;
+width: 600px;
+position: relative;
+bottom: -80px;
+left: 120px;
+padding-top: 20px; 
+margin-top: 50px;
+border-top: solid 1px #E5E5E5;
+}
+
+#page-selector p {
+text-align: center;
+position: relative;
+bottom: 10px;
+}
+
+#footer {
+height: 85px;
+width: 100%;
+background-color: #F2F2F2;
+position: relative;
+bottom: -75px;
+padding-top: 20px;
+border-top: 1px solid #E5E5E5;
+}
+
+#footer p {
+font-family: Arial;
+font-size: 13px;
+color: #8C8C8C;
+position: relative;
+left: 120px;
+}
+
+#location {
+display: block;
+}
+
+.footer-options {
+display: inline-block;
+padding-right: 30px;
+}
+
+.wrapper {
+padding: 100px;
+padding-top: 50vh;
+width: 500px;
+display: block;
+text-align: center;
+margin: 0 auto;
+}
+
+.roles {
+font-size: 20px;
+height: 50px;
+vertical-align: middle;
+overflow: hidden;
+color: white;
+}
+
+.roles div {
+height: 50px;
+transition: margin-top 2s ease-in-out;
+}
+
+
+/* About Page */
+#container { 
+    display: grid;
+    height: 200vh;
+    width: 100%;
+    grid-template-columns: 2fr .5fr;
+    grid-template-areas: 
+    "project-heading project-heading"
+    "sidebar sidebar"
+    "content content";
+}
+
+#project-heading { 
+    height: 100vh;
+    grid-area: project-heading;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10vw;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#content {
+    grid-area: content;
+    height: 100vh;
+
+}
+
+.project-heading {
+    font-size: 50px;
+    padding: 5vh;
+    font-weight: 700;
+}
+
+.project-subheading {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5vh;
+}
+
+.introduction {
+    font-size: 1.8rem;
+    padding: 10vh;
+    line-height: 1.8;
+}
+details {
+    user-select: none;
+  }
+  
+
+  details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-left: auto;
+  }
+  
+  details[open] summary span.icon {
+    transform: rotate(180deg);
+}
+
+summary {
+    display: flex;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
